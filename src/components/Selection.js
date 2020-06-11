@@ -78,6 +78,7 @@ export default function Selection({ activeStory }) {
       ))}
 
       <Card.Grid
+        hoverable={false}
         style={{
           width: "100%",
           textAlign: "center",
