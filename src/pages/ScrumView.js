@@ -94,14 +94,19 @@ function ScrumView() {
         </h4>
       </div>
 
-      <Row gutter={16} justify="space-around" style={{ padding: 30 }}>
-        <Col span={12}>
+      <Row
+        style={{ height: "100%" }}
+        gutter={16}
+        justify="space-around"
+        style={{ padding: 30 }}
+      >
+        <Col xl={12} lg={12} md={12} sm={24} xs={24} span={12}>
           <StoryList stories={data ? data.stories : null}></StoryList>
         </Col>
-        <Col span={6}>
+        <Col xl={6} lg={6} md={6} sm={24} xs={24} span={6}>
           <Selection activeStory={activeStory}></Selection>
         </Col>
-        <Col span={6}>
+        <Col xl={6} lg={6} md={6} sm={24} xs={24} span={6}>
           <ScrumPanel
             numOfVoters={
               (data && data.session && data.session.numOfVoters) || 0

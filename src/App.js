@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Layout, Button } from "antd";
+import { Layout, Button, Avatar, Tag } from "antd";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import CreateSession from "./pages/CreateSession";
 import ScrumView from "./pages/ScrumView";
@@ -38,6 +38,19 @@ function App() {
             </Switch>
           </BrowserRouter>
         </Content>
+        <Footer style={{ backgroundColor: "#c3edea" }}>
+          <Avatar
+            width="20"
+            height="20"
+            src="https://avatars0.githubusercontent.com/u/31334024?s=60&amp;v=4"
+          />
+          <b> {"   "}Ramazan Arslan </b>
+          <Tag color="warning">
+            <a href="https://github.com/ramazanarslan">
+              <b>Github</b>
+            </a>
+          </Tag>
+        </Footer>
       </Layout>
     </div>
   );
