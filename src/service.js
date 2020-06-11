@@ -1,4 +1,4 @@
-const API_PATH = "http://localhost:2222";
+const API_PATH = "https://scrum-poker-planning-api.herokuapp.com"; //"http://localhost:2222";
 export const INTERVAL = 2 * 1000;
 export const POST = async (endpoint, body) => {
   try {
