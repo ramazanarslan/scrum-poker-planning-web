@@ -1,5 +1,7 @@
 ## Scrum Poker Planning - Web
 
+[Demo link: https://scrum-pocker-app.herokuapp.com/](https://scrum-pocker-app.herokuapp.com)
+
 ### CREATE A SESSION
 - Responsive Forms and validations
 
