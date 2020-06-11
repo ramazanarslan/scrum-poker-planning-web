@@ -1,4 +1,4 @@
-const API_PATH = "http://localhost:2222";
+const API_PATH = "https://inspiring-keller-440ddc.netlify.app";
 export const INTERVAL = 2 * 1000;
 export const POST = async (endpoint, body) => {
   try {
