@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import { POST, GET, INTERVAL } from "../service";
+import { GET, INTERVAL } from "../service";
 import { useHistory } from "react-router-dom";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";

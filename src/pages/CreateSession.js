@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
-import { POST, GET } from "../service";
+import { POST } from "../service";
 
 import { Form, Input, InputNumber, Button, Row, Col } from "antd";
 

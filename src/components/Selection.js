@@ -1,7 +1,5 @@
 import React from "react";
 import { Card, Button } from "antd";
-
-import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { POST } from "../service";
 const gridStyle = {
@@ -25,8 +23,6 @@ const options = [
 
 export default function Selection({ activeStory }) {
   let location = useLocation();
-  const [point, setPoint] = useState();
-  const [pointStoryId, setPointStoryId] = useState();
 
   const isScrumMaster = location.pathname.includes(
     "view-planning-as-scrum-master"
@@ -39,13 +35,6 @@ export default function Selection({ activeStory }) {
       point,
       isScrumMaster,
     });
-    setPoint(point);
-    setPointStoryId(activeStory._id);
-  }
-
-  let isVoteUsed = false;
-  if (point && activeStory && pointStoryId === activeStory._id) {
-    isVoteUsed = true;
   }
 
   const voterId = sessionStorage.getItem("voterId") || "initial";

@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import CreateSession from "./pages/CreateSession";
 import ScrumView from "./pages/ScrumView";
 import DeveloperView from "./pages/DeveloperView";
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 function App() {
   return (
